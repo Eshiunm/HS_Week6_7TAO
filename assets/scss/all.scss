@@ -10,6 +10,8 @@
 
 //----------   以上是載入 Boostrap 5 的 Sass 主體 ----------
 
+// 全站設定
+@import './base.scss';
 
 // layout
 @import './layout/header.scss';
