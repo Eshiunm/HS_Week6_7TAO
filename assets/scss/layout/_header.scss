@@ -1,14 +1,54 @@
 header{
   border-bottom: 3px solid #030303 ;
 
+  @media(max-width:992px) {
+    .logotitle{
+      display: none;
+    }
+  }
+
+  @media(max-width:768px) {
+    .p-4{
+      padding: 8px;
+    }
+
+    .RLSection{
+      display: none;
+    }
+  }
+
+  @media(max-width:477px){
+    #search{
+      width: 80px;
+    }
+  }
+  
+  .navbar{
+    display: none;
+
+    @media(max-width:768px) {
+      display: block;
+      
+    }
+  }
+
   .logo_img{
     width: 53px;
     height: 53px;
+
+    @media(max-width:768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
   .search-group ::-webkit-input-placeholder 
   { 
     font-size: 16px;
     padding-left: 24px;
+
+    @media(max-width:477px){
+      padding-left: 8px;
+    }
   }
 
   .hover a:hover{
