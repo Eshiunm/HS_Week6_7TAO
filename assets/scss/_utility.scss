@@ -1,10 +1,26 @@
-.wh-20{
-    width: ($spacer/4)*20;
-    height: ($spacer/4)*20;
-}
-
-
-
 .opacity-7:hover{
     opacity: .7;
+}
+
+.hover-text-decoration-underline:hover{
+  text-decoration: underline;  
+}
+
+.hover-bg-round{
+    position: relative;
+}
+.hover-bg-round:hover::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #FBFF22;
+    z-index: -1;
+}
+
+.height-255{
+    height: 255px;
 }
