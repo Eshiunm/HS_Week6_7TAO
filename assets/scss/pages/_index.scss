@@ -67,6 +67,11 @@
 }
 
 .Recent-activities{
+  margin-bottom: 60px;
+  @media(max-width:768px){
+    margin-bottom: 0px;
+  }
+
   .activities-title{
     padding: 24px 32px;
     h2{
@@ -91,5 +96,67 @@
 
   p{
     font-weight: 400;
+  }
+}
+
+.online-activities{
+  margin-bottom: 32px;
+  @media(max-width:768px){
+    margin-bottom: 24px;
+  }
+
+  .activities-title{
+    padding: 24px 32px;
+    h2{
+      font-size: 64px;
+    }
+    h5{
+      font-size: 32px;
+    }
+  }
+
+  h3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+
+  li{
+    padding: 4px 24px;
+    position: relative;
+  }
+
+  li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-left: 4px solid black ;
+  }
+  a{
+    padding: 8px 0;
+  }
+
+  a:hover{
+    color: #FBFF22 !important;
+  }
+}
+
+
+marquee{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  padding: 24px 0;
+  margin-bottom: 60px;
+  p{
+    font-size: 32px;
+  }
+
+  @media(max-width:992px){
+    p{
+      font-size: 16px;
+    }
   }
 }
