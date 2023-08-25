@@ -1,3 +1,237 @@
-.index-title {
-  font-size: 100px;
+.carousel-main-caption{
+    position: absolute;
+    top:48px;
+    left: 48px;
+    padding-top:0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: start;
+
+    @media(max-width:768px){
+      .fs-15{
+        font-size: 32px !important;
+      }
+    }
+}
+
+.carousel-caption{
+  @media(max-width:768px){
+    .fs-6{
+      font-size: 18px !important;
+    }
+  }
+}
+
+.menu{
+  img{
+    width: 80px;
+    height: 80px;
+  }
+  .menu-item{
+    height: 190px;
+  }
+
+  h6{
+    font-size: 48px;
+  }
+
+
+  @media(max-width:768px){
+    .fs-6{
+      font-size: 16px !important;
+    }
+    .menu-item{
+      height: 150px;
+    }
+
+    h6{
+      font-size: 24px;
+    }
+  }
+
+  @media(max-width:500px){
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    .menu-item{
+      height: 120px;
+    }
+  }
+  @media(max-width:400px){
+    .menu-item{
+      height: 90px;
+    }
+  }
+  
+}
+
+.Recent-activities{
+  margin-bottom: 60px;
+  @media(max-width:768px){
+    margin-bottom: 0px;
+
+  }
+
+  .activities-title{
+    padding: 24px 32px;
+    h2{
+      font-size: 64px;
+      @media(max-width:768px){
+        font-size: 24px;
+      }
+    }
+    h5{
+      font-size: 32px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.activities-list-item{
+  .wh-24{
+    width: 24px;
+    height: 24px;
+    line-height: 1.5;
+  }
+
+  h3{
+    font-weight: 400;
+  }
+
+  p{
+    font-weight: 400;
+  }
+}
+
+.online-activities{
+  margin-bottom: 32px;
+  @media(max-width:768px){
+    margin-bottom: 24px;
+  }
+
+  .activities-title{
+    padding: 24px 32px;
+    h2{
+      font-size: 64px;
+      @media(max-width:768px){
+        font-size: 24px;
+      }
+    }
+    h5{
+      font-size: 32px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
+    }
+  }
+
+  h3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+
+  li{
+    padding: 4px 24px;
+    position: relative;
+  }
+
+  li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-left: 4px solid black ;
+  }
+  a{
+    padding: 8px 0;
+  }
+
+  a:hover{
+    color: #FBFF22 !important;
+  }
+}
+
+
+.activities-section{
+  h6{
+    margin-top: -26px;
+    span{
+      padding: 8px 16px;
+    }
+  }
+
+
+
+  .picture-frame{
+    padding: 16px 16px 48px 16px;
+    @media(max-width:768px){
+      padding: 16px 16px 32px 16px;
+    }
+  }
+}
+
+marquee{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  padding: 24px 0;
+  margin-bottom: 60px;
+  p{
+    font-size: 32px;
+  }
+
+  @media(max-width:992px){
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.follow-and-subscribe{
+  .low-768-appear{
+    display: none;
+  }
+  @media(max-width:768px){
+    .low-768-disappear{
+      display: none;
+    }
+    .low-768-appear{
+      display: block;
+    }
+  }
+
+  th{
+    font-size: 32px;
+    padding-left: 32px;
+  }
+
+  td{
+    padding: 32px 32px 32px 32px;
+  }
+
+  .icon-box{
+    width: 32px;
+    height: 32px;
+  }
+  i{
+    margin: 0 auto;
+  }
+  input{
+    width: 100%;
+    padding: 16px 0 16px 24px;
+    background-color: #f3f1e5;
+  }
+  a:hover{
+    color: #FBFF22 !important;
+  }
+}
+
+
+.inspirational-saying{
+  
 }

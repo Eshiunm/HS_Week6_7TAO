@@ -4,21 +4,43 @@
             <div class="d-flex">
                 <!-- logo 區塊 -->
                 <div class="d-flex me-12">
-                    <a href="index.html" class="d-inline-block">
+                    <a href="index.html" class="d-flex align-items-center">
                         <img class="logo_img me-4" src="../assets/images/logo.png" alt="logo圖片">
-                        <div class="fs-8 d-inline-block vertical-align-middle">7TAO</div>
-                        <div class="fs-4 d-inline-block vertical-align-middle">活動訂票網</div>
+                        <div class="fs-8 vertical-align-middle logotitle me-1">7TAO</div>
+                        <div class="fs-4 vertical-align-middle logotitle">活動訂票網</div>
                     </a>
                 </div>
                 <!-- 查詢區塊  -->
                 <div class="d-flex search-group border border-dark rounded-0">
                     <input id="search" type="text" class="fs-4 border border-dark rounded-0" placeholder="探索活動" aria-label="search" aria-describedby="button-addon2">
-                    <button type="button" class="btn btn-dark text-secondary p-4 rounded-0">
+                    <button type="button" class="btn btn-dark text-secondary p-2 pe-4 ps-4 rounded-0">
                         <i class="icofont-search-1 vertical-align-middle"></i>
                     </button>
                 </div>
             </div>
-                <!-- 登入、註冊區塊  -->
+                
+            <!-- 登入、註冊區塊  -->
+            <div class="hover RLSection">
+                <a href="" class="d-inline-block me-6 hover">
+                    <i class="icofont-ui-file "></i>
+                    REGISTER
+                </a>
+                <a href="" class="d-inline-block hover">
+                    <i class="icofont-ui-user"></i>
+                    LOGIN
+                </a>
+            </div> 
+
+            <!-- 收合登入註冊 -->
+            <nav class="navbar bg-third ">
+                <button class="navbar-toggler border-primary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- 收合登入註冊 -->
+        <div class="collapse text-end" id="navbarToggleExternalContent">
             <div class="hover">
                 <a href="" class="d-inline-block me-6 hover">
                     <i class="icofont-ui-file "></i>
@@ -28,7 +50,8 @@
                     <i class="icofont-ui-user"></i>
                     LOGIN
                 </a>
-            </div>
+            </div> 
         </div>
+
     </div>
 </header>

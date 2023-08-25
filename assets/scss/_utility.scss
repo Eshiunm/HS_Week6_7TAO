@@ -1,0 +1,42 @@
+.opacity-7:hover{
+    opacity: .7;
+}
+
+.hover-text-decoration-underline:hover{
+  text-decoration: underline;  
+}
+
+.hover-bg-round{
+    position: relative;
+}
+.hover-bg-round:hover::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #FBFF22;
+    z-index: -1;
+}
+
+.height-255{
+    height: 255px;
+}
+
+.height-1{
+    height: 1px;
+}
+
+.rotate-n4{
+    transform: rotate(-4deg);
+}
+
+.rotate-p4{
+    transform: rotate(4deg);
+}
+
+.w-50{
+    width: 50%;
+}
