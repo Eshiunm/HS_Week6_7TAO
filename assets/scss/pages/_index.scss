@@ -70,15 +70,22 @@
   margin-bottom: 60px;
   @media(max-width:768px){
     margin-bottom: 0px;
+
   }
 
   .activities-title{
     padding: 24px 32px;
     h2{
       font-size: 64px;
+      @media(max-width:768px){
+        font-size: 24px;
+      }
     }
     h5{
       font-size: 32px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
     }
   }
 }
@@ -109,9 +116,15 @@
     padding: 24px 32px;
     h2{
       font-size: 64px;
+      @media(max-width:768px){
+        font-size: 24px;
+      }
     }
     h5{
       font-size: 32px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
     }
   }
 
@@ -144,6 +157,24 @@
 }
 
 
+.activities-section{
+  h6{
+    margin-top: -26px;
+    span{
+      padding: 8px 16px;
+    }
+  }
+
+
+
+  .picture-frame{
+    padding: 16px 16px 48px 16px;
+    @media(max-width:768px){
+      padding: 16px 16px 32px 16px;
+    }
+  }
+}
+
 marquee{
   display: flex;
   justify-self: start;
@@ -159,4 +190,48 @@ marquee{
       font-size: 16px;
     }
   }
+}
+
+.follow-and-subscribe{
+  .low-768-appear{
+    display: none;
+  }
+  @media(max-width:768px){
+    .low-768-disappear{
+      display: none;
+    }
+    .low-768-appear{
+      display: block;
+    }
+  }
+
+  th{
+    font-size: 32px;
+    padding-left: 32px;
+  }
+
+  td{
+    padding: 32px 32px 32px 32px;
+  }
+
+  .icon-box{
+    width: 32px;
+    height: 32px;
+  }
+  i{
+    margin: 0 auto;
+  }
+  input{
+    width: 100%;
+    padding: 16px 0 16px 24px;
+    background-color: #f3f1e5;
+  }
+  a:hover{
+    color: #FBFF22 !important;
+  }
+}
+
+
+.inspirational-saying{
+  
 }
