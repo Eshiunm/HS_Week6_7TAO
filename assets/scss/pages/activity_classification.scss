@@ -1,0 +1,38 @@
+.activities-title{
+    padding: 24px 32px;
+    h2{
+      font-size: 64px;
+      @media(max-width:768px){
+        font-size: 24px;
+      }
+    }
+    h5{
+      font-size: 32px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
+    }
+  }
+
+  .tags{
+    li{
+        padding: 4px 24px;
+        position: relative;
+      }
+    
+      li::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-left: 4px solid black ;
+      }
+  }
+
+  nav{
+    a:hover{
+        color: #FBFF22 !important;
+        background-color: #030303 !important;
+    }
+  }
