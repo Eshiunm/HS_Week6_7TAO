@@ -231,4 +231,15 @@ marquee{
   }
 }
 
+.inspirational-saying{
+  @media(max-width:768px){
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
 
