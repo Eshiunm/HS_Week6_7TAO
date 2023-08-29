@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/font-family'); -%>
+    <%- include('./layout/google-icon')-%>
+    <%- include('./layout/icofont')-%>
+    <title>付款</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <div class="container pt-md-15 pt-6">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <!-- 進度條 -->
+                <ol class="step list-unstyled d-flex justify-content-between position-relative mb-6 mb-md-12">
+                    <li class="d-flex flex-column align-items-center">
+                        <h6 class="ff-Noto-Serif-TC text-center pt-3 pb-3 border border-2 border-primary bg-primary text-secondary fs-5">1</h6>
+                        <p>訂單確認</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <h6 class="ff-Noto-Serif-TC text-center pt-3 pb-3 border border-2 border-primary bg-primary text-secondary fs-5">2</h6>
+                        <p>結帳付款</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <h6 class="ff-Noto-Serif-TC text-center pt-3 pb-3 border border-2 border-primary bg-third fs-5">3</h6>
+                        <p>訂購結果</p>
+                    </li>
+                </ol>
+
+                <!-- 標題 -->
+                <h2 class="fs-15 fw-bold mb-4 text-center mb-md-8 mb-6">返老還童-制服聯誼</h2>
+                
+            </div>
+            <div class="col-md-8 mx-auto mb-md-8 mb-6">
+                <p class="text-center text-secondary bg-primary ff-Noto-Sans-TC">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <!-- 表格 -->
+                <table class="table border-primary mb-md-12 mb-8">
+                    <tbody class="border-top border-3 border-primary">
+                      <tr>
+                        <th scope="row">訂單編號</th>
+                        <td class="text-end ff-Noto-Sans-TC">892746123</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">票券</th>
+                        <td class="text-end ff-Noto-Sans-TC">改頭換面票（含大改造）$8000</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <!-- 聯絡人資料 -->
+                <div class="d-flex flex-column align-items-center mb-4">
+                    <img class="wh-8 d-block mb-4" src="../assets/images/sparkler.png" alt="logo">
+                    <h5 class="fw-bold mb-0">結帳資訊</h5>
+                    <form action="" class="w-100 ">
+                        <label for="username" class="form-label d-block fs-4 ff-Noto-Sans-TC">取票資訊</label>
+                        <input class="fs-5 mb-1 form-control border border-2 border-primary w-100 ff-Noto-Sans-TC" type="text" id="username" placeholder="請輸入身分證字號或護照號碼" required>
+                        <p class="ff-Noto-Sans-TC">請輸入您的 <span style="color:#C96464 ;">身分證字號</span> 供取票使用，外籍人士請輸入 <span style="color:#C96464 ;">護照號碼</span></p>
+                        <span class="d-block ff-Noto-Sans-TC mb-2">付款方式</span>
+                        <div class="mb-md-8 mb-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label ff-Noto-Sans-TC" for="flexRadioDefault1">
+                                  信用卡
+                                </label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label ff-Noto-Sans-TC" for="flexRadioDefault2">
+                                  ATM虛擬帳號
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <button type="submit" onclick="location.href='checkout_completion.html'" class="fs-5 btn btn-primary d-block col-md-8 col-12 pt-2 pb-2 hover-primary ff-Noto-Sans-TC" href="payment.html">
+                                確認訂單並繳費 $8000
+                                <span class="material-icons-two-tone align-text-bottom">
+                                    keyboard_double_arrow_right
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script  type="module" src="../main.js"></script>
+</body>
+</html>

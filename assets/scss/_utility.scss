@@ -20,6 +20,9 @@
     background: #FBFF22;
     z-index: -1;
 }
+.hover-primary:hover{
+    color: #FBFF22;
+}
 
 .height-255{
     height: 255px;
@@ -47,4 +50,21 @@
 
 .vertical-align-middle{
     vertical-align: middle;
+}
+
+.ff-Noto-Serif-TC{
+    font-family: 'Noto Serif TC';
+}
+
+.ff-Noto-Sans-TC{
+    font-family: 'Noto Sans TC';
+}
+
+.position-relative{
+    position: relative !important;
+}
+
+.wh-8{
+    width: 32px;
+    height: 32px;
 }
