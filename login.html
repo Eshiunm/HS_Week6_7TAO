@@ -14,7 +14,24 @@
 <!-- Noto Serif Traditional Chinese -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">        <title>會員登入</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">        <!-- 載入 jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>會員登入</title>
+    
+   
+    <!-- <style>
+        /* 通過驗證樣式 */
+        .was-validated .form-control:valid,
+        .was-validated .form-control:valid:focus {
+        border-color: #0d6efd;
+        box-shadow: none;
+        }
+        /* 未通過驗證樣式 */
+        .was-validated .form-control:invalid,
+        .was-validated .form-control:invalid:focus {
+        background-color: #000;
+        }
+    </style> -->
   <script type="module" crossorigin src="/HS_Week6_7TAO/assets/main-d09f2910.js"></script>
   <link rel="stylesheet" href="/HS_Week6_7TAO/assets/main-20e0d966.css">
 </head>
@@ -82,20 +99,43 @@
                     <img class="wh-8 d-block mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="logo">
                     <h5 class="fw-bold mb-0 fs-6">會員登入</h5>
                 </div>
-                <form action="" class="w-100">
-                    <label for="username" class="form-label d-block fs-4 ff-Noto-Sans-TC">帳號</label>
-                    <input class="fs-5 mb-4 form-control border border-2 border-primary w-100 ff-Noto-Sans-TC" type="text" id="useraccount" placeholder="請輸入帳號" required>
-                    <label for="userpassword" class="form-label d-block fs-4 ff-Noto-Sans-TC ">密碼</label>
-                    <input class="fs-5 mb-md-8 mb-6 form-control border border-2 border-primary w-100 ff-Noto-Sans-TC" type="text" id="userpassword" placeholder="請輸入密碼" required>
+                
+                <!-- 在 form 標籤加入 novalidate 屬性，來消除瀏覽器預設的回饋視窗 -->
+                <form action="" class="w-100 needs-validation" novalidate>
+                    <div class="mb-4">
+                        <label for="useraccount" class="form-label d-block fs-4 ff-Noto-Sans-TC">帳號</label>
+                        <input class="fs-5 form-control border border-2 border-primary w-100 ff-Noto-Sans-TC" type="text" id="useraccount" placeholder="請輸入帳號" required>
+                        <div class="invalid-feedback fs-5">請輸入帳號</div>
+                    </div>
+                    
+                    <div class="mb-6 mb-md-8">
+                        <label for="userpassword" class="form-label d-block fs-4 ff-Noto-Sans-TC ">密碼</label>
+                        <input class="fs-5  form-control border border-2 border-primary w-100 ff-Noto-Sans-TC" type="text" id="userpassword" placeholder="請輸入密碼" required>
+                        <div class="invalid-feedback fs-5">請輸入密碼</div>
+                    </div>
+                   
+                   
                     <div class="d-flex justify-content-center align-items-center mb-4">
-                        <button type="submit" class="fs-5 btn btn-primary d-block col-12 pt-2 pb-2 hover-primary" href="payment.html">
+                        <button type="submit" class="fs-5 btn btn-primary d-block col-12 pt-2 pb-2 hover-primary">
                             登入
                             <span class="material-icons-two-tone align-text-bottom">
                                 keyboard_double_arrow_right
                             </span>
                         </button>
                     </div>
+                    <script>
+                        $(".needs-validation").each(function (index) {
+                            $(this).on("submit", function (e) {
+                                e.preventDefault();
+                                $(this).addClass("was-validated");
+                            });
+                        });
+                    </script>
+    
                 </form>
+
+
+
             </div>
         </div>
     </div>
