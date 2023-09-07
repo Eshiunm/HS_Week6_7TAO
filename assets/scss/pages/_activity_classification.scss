@@ -15,19 +15,26 @@
   }
 
   .tags{
-    li{
-        padding: 4px 24px;
-        position: relative;
-      }
+    a{
+      position: relative;
+      padding: 4px 24px;
+      border: 2px solid black;
+      border-left: 4px solid black;
+    }
     
-      li::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        border-left: 4px solid black ;
-      }
+    a:hover{
+      background: black;
+      color: white;
+    }
+    a:hover::before{
+      position: absolute;
+      content: "";
+      top: -2px;
+      left: -4px;
+      width: 4px;
+      height: 36px;
+      background-color: #FBFF22;
+    }
   }
 
   nav{
@@ -35,4 +42,8 @@
         color: #FBFF22 !important;
         background-color: #030303 !important;
     }
+  }
+
+  article{
+    background-color: #EBEAE8;
   }

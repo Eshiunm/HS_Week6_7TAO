@@ -8,18 +8,20 @@
 
 .hover-bg-round{
     position: relative;
+    z-index: 1;
 }
 .hover-bg-round:hover::before{
     content: "";
     position: absolute;
-    bottom:0;
-    left: 0;
+    top: 4px;
+    left: 7px;
     width: 29px;
     height: 29px;
     border-radius: 50%;
     background: #FBFF22;
     z-index: -1;
 }
+
 .hover-primary:hover{
     color: #FBFF22;
 }
@@ -39,6 +41,15 @@
 .rotate-p4{
     transform: rotate(4deg);
 }
+
+.rotate-n2{
+    transform: rotate(-2deg);
+}
+
+.rotate-p2{
+    transform: rotate(2deg);
+}
+
 
 .w-50{
     width: 50%;
